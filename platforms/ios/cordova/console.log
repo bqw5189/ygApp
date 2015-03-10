@@ -1,0 +1,41 @@
+2015-03-09 17:37:13.199 ygApp[11874:554860] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/baiqunwei/Library/Developer/CoreSimulator/Devices/B79E92F8-6651-4620-B348-75739FD9DFD7/data/Containers/Data/Application/C33870FA-5F74-4B57-ADA9-1CFC35C4268A/Library/Cookies/Cookies.binarycookies
+2015-03-09 17:37:13.517 ygApp[11874:554860] Apache Cordova native platform version 3.8.0 is starting.
+2015-03-09 17:37:13.518 ygApp[11874:554860] Multi-tasking -> Device: YES, App: YES
+2015-03-09 17:37:13.529 ygApp[11874:554860] Unlimited access to network resources
+2015-03-09 17:37:13.941 ygApp[11874:554860] [CDVTimer][keyboard] 0.073016ms
+2015-03-09 17:37:13.941 ygApp[11874:554860] [CDVTimer][TotalPluginStartup] 0.257015ms
+2015-03-09 17:37:14.800 ygApp[11874:554860] Resetting plugins due to page load.
+2015-03-09 17:37:15.067 ygApp[11874:554860] Finished load of: file:///Users/baiqunwei/Library/Developer/CoreSimulator/Devices/B79E92F8-6651-4620-B348-75739FD9DFD7/data/Containers/Bundle/Application/D470D666-88B1-4E2D-B172-55FE5B832221/ygApp.app/www/index.html#/app/playlists
+2015-03-09 17:37:46.041 ygApp[11874:554860] Doing login [object Object]
+2015-03-10 16:39:14.042 ygApp[12923:792153] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/baiqunwei/Library/Developer/CoreSimulator/Devices/B79E92F8-6651-4620-B348-75739FD9DFD7/data/Containers/Data/Application/6E10D233-E549-488D-9F66-F6618D16533B/Library/Cookies/Cookies.binarycookies
+2015-03-10 16:39:14.263 ygApp[12923:792153] Apache Cordova native platform version 3.8.0 is starting.
+2015-03-10 16:39:14.264 ygApp[12923:792153] Multi-tasking -> Device: YES, App: YES
+2015-03-10 16:39:14.274 ygApp[12923:792153] Unlimited access to network resources
+2015-03-10 16:39:14.676 ygApp[12923:792153] [CDVTimer][keyboard] 0.070989ms
+2015-03-10 16:39:14.676 ygApp[12923:792153] [CDVTimer][TotalPluginStartup] 0.738025ms
+2015-03-10 16:39:14.946 ygApp[12923:792153] Resetting plugins due to page load.
+2015-03-10 16:39:15.220 ygApp[12923:792153] Finished load of: file:///Users/baiqunwei/Library/Developer/CoreSimulator/Devices/B79E92F8-6651-4620-B348-75739FD9DFD7/data/Containers/Bundle/Application/243BD01B-642F-40EA-B7AB-F573572281D4/ygApp.app/www/index.html#/app/tabs
+2015-03-10 16:50:55.070 ygApp[13099:797432] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/baiqunwei/Library/Developer/CoreSimulator/Devices/B79E92F8-6651-4620-B348-75739FD9DFD7/data/Containers/Data/Application/BE20D636-9F03-46DF-BECA-61400B449F9C/Library/Cookies/Cookies.binarycookies
+2015-03-10 16:50:55.167 ygApp[13099:797432] Apache Cordova native platform version 3.8.0 is starting.
+2015-03-10 16:50:55.167 ygApp[13099:797432] Multi-tasking -> Device: YES, App: YES
+2015-03-10 16:50:55.169 ygApp[13099:797432] Unlimited access to network resources
+2015-03-10 16:50:55.380 ygApp[13099:797432] [CDVTimer][keyboard] 0.062048ms
+2015-03-10 16:50:55.380 ygApp[13099:797432] [CDVTimer][TotalPluginStartup] 0.247002ms
+2015-03-10 16:50:55.502 ygApp[13099:797432] Resetting plugins due to page load.
+2015-03-10 16:50:55.689 ygApp[13099:797432] Finished load of: file:///Users/baiqunwei/Library/Developer/CoreSimulator/Devices/B79E92F8-6651-4620-B348-75739FD9DFD7/data/Containers/Bundle/Application/D7D080B1-4185-418C-8313-7AC795E4410E/ygApp.app/www/index.html#/app/tabs
+2015-03-10 16:52:44.097 ygApp[13224:798691] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/baiqunwei/Library/Developer/CoreSimulator/Devices/B79E92F8-6651-4620-B348-75739FD9DFD7/data/Containers/Data/Application/9D01D7F5-04C9-4980-9E51-D427153E0AC5/Library/Cookies/Cookies.binarycookies
+2015-03-10 16:52:44.191 ygApp[13224:798691] Apache Cordova native platform version 3.8.0 is starting.
+2015-03-10 16:52:44.191 ygApp[13224:798691] Multi-tasking -> Device: YES, App: YES
+2015-03-10 16:52:44.193 ygApp[13224:798691] Unlimited access to network resources
+2015-03-10 16:52:44.383 ygApp[13224:798691] [CDVTimer][keyboard] 0.060022ms
+2015-03-10 16:52:44.384 ygApp[13224:798691] [CDVTimer][TotalPluginStartup] 0.244975ms
+2015-03-10 16:52:44.472 ygApp[13224:798691] Resetting plugins due to page load.
+2015-03-10 16:52:44.649 ygApp[13224:798691] Finished load of: file:///Users/baiqunwei/Library/Developer/CoreSimulator/Devices/B79E92F8-6651-4620-B348-75739FD9DFD7/data/Containers/Bundle/Application/C7284EB9-01B5-4A31-B023-06C91271992B/ygApp.app/www/index.html#/app/tabs
+2015-03-10 16:56:34.126 ygApp[13348:800524] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/baiqunwei/Library/Developer/CoreSimulator/Devices/B79E92F8-6651-4620-B348-75739FD9DFD7/data/Containers/Data/Application/5FE8D4E7-37A9-4C27-86F8-53B92B954CB2/Library/Cookies/Cookies.binarycookies
+2015-03-10 16:56:34.215 ygApp[13348:800524] Apache Cordova native platform version 3.8.0 is starting.
+2015-03-10 16:56:34.215 ygApp[13348:800524] Multi-tasking -> Device: YES, App: YES
+2015-03-10 16:56:34.217 ygApp[13348:800524] Unlimited access to network resources
+2015-03-10 16:56:34.415 ygApp[13348:800524] [CDVTimer][keyboard] 0.059962ms
+2015-03-10 16:56:34.415 ygApp[13348:800524] [CDVTimer][TotalPluginStartup] 0.249028ms
+2015-03-10 16:56:34.537 ygApp[13348:800524] Resetting plugins due to page load.
+2015-03-10 16:56:34.720 ygApp[13348:800524] Finished load of: file:///Users/baiqunwei/Library/Developer/CoreSimulator/Devices/B79E92F8-6651-4620-B348-75739FD9DFD7/data/Containers/Bundle/Application/B34A8C2E-483D-4991-BF7F-75C710A3C631/ygApp.app/www/index.html#/app/tabs
