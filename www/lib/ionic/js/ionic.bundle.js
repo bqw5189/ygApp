@@ -53842,7 +53842,7 @@ function($ionicTabsDelegate, $ionicConfig, $ionicHistory) {
       innerElement.append(tElement.contents());
 
       tElement.append(innerElement)
-              .addClass('tabs-' + $ionicConfig.tabs.position() + ' tabs-' + $ionicConfig.tabs.style());
+              .addClass(' tabs-' + $ionicConfig.tabs.style());
 
       return { pre: prelink, post: postLink };
       function prelink($scope, $element, $attr, tabsCtrl) {

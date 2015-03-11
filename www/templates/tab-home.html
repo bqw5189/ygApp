@@ -8,11 +8,8 @@
         </button>
       </ion-nav-buttons>
        <ion-nav-buttons side="right">
-        <button class="button" ng-click="data.showReorder = !data.showReorder; data.showDelete = false">
-            排序
-        </button>
-        <button class="button" ng-click="data.showDelete = !data.showDelete; data.showReorder = false">
-           	删除
+        <button  class="button button-icon icon ion-ios-minus-outline" ng-click="data.showDelete = !data.showDelete; data.showReorder = false">
+           	
         </button>
       </ion-nav-buttons>
     </ion-nav-bar>
@@ -20,9 +17,10 @@
     <ion-list show-delete="data.showDelete" 
     		show-reorder="data.showReorder"
           can-swipe="listCanSwipe">
-      <ion-item class="item-thumbnail-left" ng-repeat="chatlist in chatlists" href="#/app/playlist/{{chatlist.id}}">
+      <ion-item class="item-avatar" ng-repeat="chatlist in chatlists" href="#/app/playlist/{{chatlist.id}}">
         <img ng-src="{{chatlist.img}}">{{chatlist.title}}
-        <h3>{{chatlist.lastMessage}}</h3>
+        <p>{{chatlist.lastMessage}}<span>2015-03-11 13:00:00</span></p>
+        
         <ion-option-button class="button-positive"
                        ng-click="share(chatlist)">
 	      分享

@@ -21,8 +21,8 @@
     		show-reorder="data.showReorder"
           can-swipe="listCanSwipe">
       <ion-item class="item-thumbnail-left" ng-repeat="chatlist in chatlists" href="#/app/playlist/{{chatlist.id}}">
-        <img ng-src="{{chatlist.img}}" width="18px" height="18px">{{chatlist.title}}
-        <h3></h3>
+        <img ng-src="{{chatlist.img}}">{{chatlist.title}}
+        <h3>{{chatlist.lastMessage}}</h3>
         <ion-option-button class="button-positive"
                        ng-click="share(chatlist)">
 	      分享
