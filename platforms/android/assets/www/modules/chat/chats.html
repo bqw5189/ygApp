@@ -17,7 +17,7 @@
     <ion-list show-delete="data.showDelete" 
     		show-reorder="data.showReorder"
           can-swipe="listCanSwipe">
-      <ion-item class="item-avatar" ng-repeat="chatlist in chatlists" href="#/app/tabs/home/{{chatlist.id}}">
+      <ion-item class="item-avatar" ng-repeat="chatlist in chatlists" href="#/app/tabs/chats/{{chatlist.title}}">
         <img ng-src="{{chatlist.img}}">{{chatlist.title}}
         <p>{{chatlist.lastMessage}}<span>2015-03-11 13:00:00</span></p>
         

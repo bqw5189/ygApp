@@ -1,6 +1,7 @@
 eclipse.preferences.version=1
 encoding//lib/ionic/css/ionic.css=UTF-8
+encoding//modules/chat/chat.html=UTF-8
+encoding//modules/chat/chats.html=UTF-8
 encoding//templates/menu.html=UTF-8
-encoding//templates/tab-home.html=UTF-8
 encoding//templates/tabs.html=UTF-8
 encoding/<project>=UTF-8

@@ -78,16 +78,25 @@ angular.module('field', ['ionic', 'field.controllers','tabs.controllers'])
 	      }
 	    }
 	  })
-  .state('app.tabs.home', {
-    url: "/home",
+  .state('app.tabs.chats', {
+    url: "/chats",
     views: {
-      'home-tab': {
-        templateUrl: "templates/tab-home.html",
-        controller: 'HomeCtrl'
+      'chats-tab': {
+        templateUrl: "modules/chat/chats.html",
+        controller: 'ChatsCtrl'
       }
     }
-  });
+  })
+  .state('app.tabs.chat', {
+	    url: "/chats/:chatId",
+	    views: {
+	      'chats-tab': {
+	        templateUrl: "modules/chat/chat.html",
+	        controller:'ChatCtrl'
+	      }
+	    }
+	  });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/tabs');
+  $urlRouterProvider.otherwise('/app/tabs/chats');
  
 });
