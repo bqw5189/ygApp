@@ -87,10 +87,10 @@ angular.module('field', ['ionic', 'field.controllers','tabs.controllers'])
       }
     }
   })
-  .state('app.tabs.chat', {
+  .state('app.chat', {
 	    url: "/chats/:chatId",
 	    views: {
-	      'chats-tab': {
+	      'menuContent': {
 	        templateUrl: "modules/chat/chat.html",
 	        controller:'ChatCtrl'
 	      }
