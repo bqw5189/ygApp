@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('field', ['ionic', 'field.controllers','tabs.controllers'])
+angular.module('field', ['ionic', 'field.controllers','tabs.controllers','css.controllers'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -19,9 +19,9 @@ angular.module('field', ['ionic', 'field.controllers','tabs.controllers'])
     }
   });
 })
-.factory('MenuButton', function() {
+.factory('AppConfig', function() {
 	  return {
-		  showReorder: true
+		  headerStyle: 'bar-positive'
 		  }
 		})
 .config(function($stateProvider, $urlRouterProvider) {
@@ -95,7 +95,45 @@ angular.module('field', ['ionic', 'field.controllers','tabs.controllers'])
 	        controller:'ChatCtrl'
 	      }
 	    }
-	  });
+	  })
+//CSS 组件
+  .state('app.css', {
+    url: "/css",
+    views: {
+      'menuContent': {
+        templateUrl: "modules/components/css/css.html",
+        controller:'ChatCtrl'
+      }
+    }
+  })
+  .state('app.header', {
+	    url: "/header",
+	    views: {
+	      'menuContent': {
+	        templateUrl: "modules/components/css/header.html",
+	        controller:'HeaderCtrl'
+	      }
+	    }
+	  })
+  .state('app.footer', {
+	    url: "/footer",
+	    views: {
+	      'menuContent': {
+	        templateUrl: "modules/components/css/footer.html",
+	        controller:'HeaderCtrl'
+	      }
+	    }
+	  })
+  .state('app.button', {
+	    url: "/button",
+	    views: {
+	      'menuContent': {
+	        templateUrl: "modules/components/css/button.html",
+	        controller:'HeaderCtrl'
+	      }
+	    }
+	  })
+	  ;
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/tabs/chats');
  

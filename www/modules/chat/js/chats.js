@@ -1,7 +1,7 @@
 
 
 angular.module('tabs.controllers', [])
-.controller('ChatsCtrl', function($scope,$ionicPopup,$ionicActionSheet,$timeout,MenuButton) {
+.controller('ChatsCtrl', function($scope,$ionicPopup,$ionicActionSheet,$timeout) {
  $scope.chatlists = [
     { title: 'Reggae', id: 1 ,img:'img/avatar-1.jpg',lastMessage:'你好！'},
     { title: 'Chill', id: 2 ,img:'img/avatar-2.jpg',lastMessage:'谢谢！'},
