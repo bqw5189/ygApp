@@ -1,0 +1,81 @@
+<ion-view view-title="{{listTitle}}"> <ion-content>
+<div class="list" ng-show="'ListDividers' == listTitle">
+	<div class="item item-divider">Candy Bars</div>
+	<a href="#" class="item"> Butterfinger </a> <a href="#" class="item">
+		Kit Kat </a> <a href="#" class="item"> Snickers </a> <a href="#"
+		class="item"> Twix </a>
+	<div class="item item-divider">Hard Candy</div>
+	<a href="#" class="item"> Jolly Rancher </a> <a href="#" class="item">
+		LifeSavers </a> <a href="#" class="item"> Skittles </a> <a href="#"
+		class="item"> Gobstoppers </a>
+</div>
+
+<div class="list" ng-show="'ListIcons' == listTitle">
+
+	<a href="#" class="item item-icon-left"> <i class="icon ion-email"></i>
+		Check mail
+	</a> <a href="#" class="item item-icon-left item-icon-right"> <i
+		class="icon ion-chatbubble-working"></i> Call Ma <i
+		class="icon ion-ios7-telephone-outline"></i>
+	</a> <a href="#" class="item item-icon-left"> <i class="icon ion-mic-a"></i>
+		Record album <span class="item-note"> Grammy </span>
+	</a> <a href="#" class="item item-icon-left"> <i
+		class="icon ion-person-stalker"></i> Friends <span
+		class="badge badge-assertive">0</span>
+	</a>
+
+	<div class="item item-divider">Activities</div>
+
+	<a href="#" class="item item-icon-left"> <i
+		class="icon ion-erlenmeyer-flask"></i> Breaking Bad <span
+		class="item-note"> Blue, yellow, pink </span>
+	</a> <a href="#" class="item item-icon-left"> <i
+		class="icon ion-music-note"></i> Music <span class="item-note">
+			JT </span>
+	</a> <a href="#" class="item item-icon-left"> <i
+		class="icon ion-ios-game-controller-b"></i> Games <span
+		class="item-note"> Super Mario </span>
+	</a> <a href="#" class="item item-icon-left item-icon-right"> <i
+		class="icon ion-bag"></i> Shopping <i class="icon ion-arrow-right-c"></i>
+	</a>
+
+</div>
+<div class="list" ng-show="'ListButtons' == listTitle">
+
+	<div class="item item-button-right">
+		Call Ma
+		<button class="button button-positive">
+			<i class="icon ion-android-call"></i>
+		</button>
+	</div>
+</div>
+
+
+<div class="list" ng-show="'ItemAvatars' == listTitle">
+	<ion-item class="item-avatar" ng-repeat="chatlist in chatlists"
+		href="#/app/chats/{{chatlist.title}}"> <img
+		ng-src="{{chatlist.img}}">
+	<h2>{{chatlist.title}}</h2>
+	<p>{{chatlist.lastMessage}}</p>
+	</ion-item>
+</div>
+
+<div class="list" ng-show="'ItemThumbnails' == listTitle">
+	<ion-item class="item-thumbnail-left" ng-repeat="chatlist in chatlists"
+		href="#/app/chats/{{chatlist.title}}"> <img
+		ng-src="{{chatlist.img}}">
+	<h2>{{chatlist.title}}</h2>
+	<p>{{chatlist.lastMessage}}</p>
+	</ion-item>
+</div>
+
+<div class="list list-inset" ng-show="'InsetLists' == listTitle">
+	<div class="item">Raiders of the Lost Ark</div>
+	<div class="item">Temple of Doom</div>
+	<div class="item">Last Crusade</div>
+	<div class="item">Kingdom of the Crystal Skull</div>
+</div>
+
+
+
+</ion-content> </ion-view>

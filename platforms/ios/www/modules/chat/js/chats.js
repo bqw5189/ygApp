@@ -1,5 +1,7 @@
+
+
 angular.module('tabs.controllers', [])
-.controller('HomeCtrl', function($scope,$ionicPopup,$ionicActionSheet,$timeout,MenuButton) {
+.controller('ChatsCtrl', function($scope,$ionicPopup,$ionicActionSheet,$timeout) {
  $scope.chatlists = [
     { title: 'Reggae', id: 1 ,img:'img/avatar-1.jpg',lastMessage:'你好！'},
     { title: 'Chill', id: 2 ,img:'img/avatar-2.jpg',lastMessage:'谢谢！'},
@@ -71,4 +73,8 @@ angular.module('tabs.controllers', [])
 	    $scope.items.splice($scope.items.indexOf(item), 1);
 	  };
 	 
+})
+.controller('ChatCtrl', function($scope, $stateParams) {
+	$scope.chatId = $stateParams.chatId;
 });
+

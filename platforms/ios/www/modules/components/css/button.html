@@ -1,0 +1,260 @@
+<ion-view title="Button">
+	 <ion-content class="padding">
+		 <div class="button-bar">
+		  <a class="button" ng-click="showCard('Buttons')">Buttons</a>
+		  <a class="button" ng-click="showCard('Block')">Block</a>
+		  <a class="button" ng-click="showCard('Full')">Full</a>
+		</div>
+		<div class="button-bar">
+		  <a class="button" ng-click="showCard('Clear')">Clear</a>
+		  <a class="button" ng-click="showCard('Icon')">Icon</a>
+		  <a class="button" ng-click="showCard('Headers')">In Headers</a>
+		</div>
+		<div class="button-bar">
+		  <a class="button" ng-click="showCard('Bar')">Button Bar</a>
+		  <a class="button" ng-click="showCard('Different')">Different</a>
+		  <a class="button" ng-click="showCard('Outlined')">Outlined</a>
+		</div>
+		
+	 	<div class="card" ng-show="'Buttons' == showCardName">
+		  <div class="item item-divider">
+		    Buttons
+		  </div>
+		  <div class="item item-text-wrap">
+		    <button class="button  button-light">
+			  button-light
+			</button>
+			<button class="button  button-stable">
+			  button-stable
+			</button>
+			<button class="button  button-positive" >
+			  button-positive
+			</button>
+			<button class="button  button-calm" >
+			  button-calm
+			</button>
+			<button class="button  button-balanced">
+			  button-balanced
+			</button>
+			<button class="button  button-energized" >
+			  button-energized
+			</button>
+			<button class="button  button-assertive">
+			  button-assertive
+			</button>
+			<button class="button  button-royal">
+			  button-royal
+			</button>
+			<button class="button  button-dark">
+			  button-dark
+			</button>
+		  </div>
+		</div>
+		
+		 <div class="card" ng-show="'Block' == showCardName">
+		  <div class="item item-divider">
+		    Block Buttons
+		  </div>
+		  <div class="item item-text-wrap">
+		    <button class="button button-block button-light">
+			  button-light
+			</button>
+			<button class="button button-block button-stable">
+			  button-stable
+			</button>
+			<button class="button button-block button-positive" >
+			  button-positive
+			</button>
+			<button class="button button-block button-calm" >
+			  button-calm
+			</button>
+			<button class="button button-block button-balanced">
+			  button-balanced
+			</button>
+			<button class="button button-block button-energized" >
+			  button-energized
+			</button>
+			<button class="button button-block button-assertive">
+			  button-assertive
+			</button>
+			<button class="button button-block button-royal">
+			  button-royal
+			</button>
+			<button class="button button-block button-dark">
+			  button-dark
+			</button>
+		  </div>
+		</div>
+		
+		<div class="card" ng-show="'Full' == showCardName">
+		  <div class="item item-divider">
+		    Full Width Block Buttons
+		  </div>
+		  <div class="item item-text-wrap" style="padding: 0px;">
+		    <button class="button button-full button-light">
+			  button-light
+			</button>
+			<button class="button button-full button-stable">
+			  button-stable
+			</button>
+			<button class="button button-full button-positive" >
+			  button-positive
+			</button>
+			<button class="button button-full button-calm" >
+			  button-calm
+			</button>
+			<button class="button button-full button-balanced">
+			  button-balanced
+			</button>
+			<button class="button button-full button-energized" >
+			  button-energized
+			</button>
+			<button class="button button-full button-assertive">
+			  button-assertive
+			</button>
+			<button class="button button-full button-royal">
+			  button-royal
+			</button>
+			<button class="button button-full button-dark">
+			  button-dark
+			</button>
+		  </div>
+		</div>
+		
+		<div class="card" ng-show="'Different' == showCardName">
+		  <div class="item item-divider">
+		    Different Sizes
+		  </div>
+		  <div class="item item-text-wrap">
+		    <button class="button button-small button-assertive">
+			  Small Button
+			</button>
+			<button class="button button-large button-positive">
+			  Large Button
+			</button>
+		  </div>
+		</div>
+		
+		<div class="card" ng-show="'Outlined' == showCardName">
+		  <div class="item item-divider">
+		    Outlined Buttons
+		  </div>
+		  <div class="item item-text-wrap">
+		    <button class="button button-outline button-light">
+			  button-light
+			</button>
+			<button class="button button-outline button-stable">
+			  button-stable
+			</button>
+			<button class="button button-outline button-positive" >
+			  button-positive
+			</button>
+			<button class="button button-outline button-calm" >
+			  button-calm
+			</button>
+			<button class="button button-outline button-balanced">
+			  button-balanced
+			</button>
+			<button class="button button-outline button-energized" >
+			  button-energized
+			</button>
+			<button class="button button-outline button-assertive">
+			  button-assertive
+			</button>
+			<button class="button button-outline button-royal">
+			  button-royal
+			</button>
+			<button class="button button-outline button-dark">
+			  button-dark
+			</button>
+		  </div>
+		</div>
+		
+		<div class="card" ng-show="'Clear' == showCardName">
+		  <div class="item item-divider">
+		    Clear Buttons
+		  </div>
+		  <div class="item item-text-wrap">
+		    <button class="button button-clear button-light">
+			  button-light
+			</button>
+			<button class="button button-clear button-stable">
+			  button-stable
+			</button>
+			<button class="button button-clear button-positive" >
+			  button-positive
+			</button>
+			<button class="button button-clear button-calm" >
+			  button-calm
+			</button>
+			<button class="button button-clear button-balanced">
+			  button-balanced
+			</button>
+			<button class="button button-clear button-energized" >
+			  button-energized
+			</button>
+			<button class="button button-clear button-assertive">
+			  button-assertive
+			</button>
+			<button class="button button-clear button-royal">
+			  button-royal
+			</button>
+			<button class="button button-clear button-dark">
+			  button-dark
+			</button>
+		  </div>
+		</div>
+		
+		<div class="card" ng-show="'Icon' == showCardName">
+		  <div class="item item-divider">
+		    Icon Buttons
+		  </div>
+		  <div class="item item-text-wrap">
+		    <button class="button">
+			  <i class="icon ion-loading-c"></i> Loading...
+			</button>
+			
+			<button class="button icon-left ion-home">Home</button>
+			
+			<button class="button icon-left ion-star button-positive">Favorites</button>
+			
+			<a class="button icon-right ion-chevron-right button-calm">Learn More</a>
+			
+			<a class="button icon-left ion-chevron-left button-clear button-dark">Back</a>
+			
+			<button class="button icon ion-gear-a"></button>
+			
+			<a class="button button-icon icon ion-settings"></a>
+			
+			<a class="button button-outline icon-right ion-navicon button-balanced">Reorder</a>
+		  </div>
+		</div>
+		
+		<div class="card" ng-show="'Headers' == showCardName">
+		  <div class="item item-divider">
+		    Buttons in Headers
+		  </div>
+		  <div class="item item-text-wrap" style="height:50px">
+		    <div class="bar bar-header">
+			  <button class="button icon ion-navicon"></button>
+			  <h1 class="title">Header Buttons</h1>
+			  <button class="button button-clear">Edit</button>
+			</div>
+		  </div>
+		</div>
+		
+		<div class="card" ng-show="'Bar' == showCardName">
+		  <div class="item item-divider">
+		    Button Bar
+		  </div>
+		  <div class="item item-text-wrap" >
+		    <div class="button-bar">
+			  <a class="button">First</a>
+			  <a class="button">Second</a>
+			  <a class="button">Third</a>
+			</div>
+		  </div>
+		</div>
+		
+	</ion-content>
+</ion-view>

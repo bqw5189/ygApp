@@ -1,0 +1,54 @@
+<ion-view view-title="{{chatId}}"> 
+<ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons>
+        <a class="button button-icon button-clear ion-ios-arrow-back" href="#/app/tabs/chats">
+        </a>
+      </ion-nav-buttons>
+       <ion-nav-buttons side="right">
+        <button  class="button button-icon icon ion-ios-minus-outline" ng-click="data.showDelete = !data.showDelete; data.showReorder = false">
+           	
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+	<ion-content>
+		<div class="chat-box">
+		    <div class="message-box left-img">
+		      <div class="picture">
+		        <img src="" title="user name"/>
+		        <span class="time">10 mins</span>
+		      </div>
+		      <div class="message">
+		        <span>Bobby Giangeruso</span>
+		        <p>Hey Mike, how are you doing?</p>
+		      </div>
+		    </div>
+		    <div class="message-box right-img">
+		      <div class="picture">
+		        <img src="" title="user name"/>
+		        <span class="time">2 mins</span>
+		      </div>
+		      <div class="message">
+		        <span>Mike Moloney</span>
+		        <p>Pretty good, Eating nutella, nommommom</p>
+		      </div>
+		    </div>
+		    <div class="enter-message">
+		      <input type="text" placeholder="Enter your message.."/>
+		      <a href="#" class="send">Send</a>
+		    </div>
+		  </div>
+		</div>
+	</ion-content>
+	<ion-footer-bar align-title="left" class="bar-assertive">
+	  <div class="buttons">
+	    <button class="button">Left Button</button>
+	  </div>
+	  <h1 class="title">Title!</h1>
+	  <div class="buttons" ng-click="doSomething()">
+	    <button class="button">Right Button</button>
+	  </div>
+	</ion-footer-bar>
+</ion-view>

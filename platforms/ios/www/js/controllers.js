@@ -1,8 +1,10 @@
 angular.module('field.controllers', [])
 
-.controller('AppCtrl', function($scope, $ionicModal, $timeout,$ionicSideMenuDelegate) {
+.controller('AppCtrl', function($scope, $ionicModal, $timeout,$ionicSideMenuDelegate,AppConfig) {
   // Form data for the login modal
   $scope.loginData = {};
+  
+  $scope.headerStyle=AppConfig.headerStyle;
   
   // Create the login modal that we will use later
   $ionicModal.fromTemplateUrl('templates/login.html', {
@@ -44,6 +46,7 @@ angular.module('field.controllers', [])
   ];
 })
 .controller('PlaylistCtrl', function($scope, $stateParams) {
-});
+})
+;
 
 

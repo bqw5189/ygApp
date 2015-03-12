@@ -3,7 +3,7 @@
       <ion-nav-back-button>
       </ion-nav-back-button>
 
-      <ion-nav-buttons side="left" ng-click="alert(menuButton.showReorder=false)">
+      <ion-nav-buttons side="left">
         <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
         </button>
       </ion-nav-buttons>
@@ -17,7 +17,7 @@
     <ion-list show-delete="data.showDelete" 
     		show-reorder="data.showReorder"
           can-swipe="listCanSwipe">
-      <ion-item class="item-avatar" ng-repeat="chatlist in chatlists" href="#/app/playlist/{{chatlist.id}}">
+      <ion-item class="item-avatar" ng-repeat="chatlist in chatlists" href="#/app/chats/{{chatlist.title}}">
         <img ng-src="{{chatlist.img}}">{{chatlist.title}}
         <p>{{chatlist.lastMessage}}<span>2015-03-11 13:00:00</span></p>
         
