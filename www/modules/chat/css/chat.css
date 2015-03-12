@@ -9,7 +9,6 @@ a{
   text-decoration:none;
 }
 .container{
-  width:400px;
   display:block;
   margin:0 auto;
   box-shadow:0 2px 5px rgba(0,0,0,0.4);
@@ -66,7 +65,6 @@ a{
   background:#fff;
   display:inline-block;
   padding:13px;
-  width:274px;
   border-radius:2px;
   box-shadow: 0 1px 1px rgba(0,0,0,.04);
   position:relative;
@@ -93,6 +91,7 @@ a{
   float:right;
   padding:0;
   padding-left:10px;
+  
 }
 .message-box.right-img .picture img{
   float:right;
@@ -102,23 +101,8 @@ a{
   margin-right:6px;
   margin-left:0;
   border-right:6px solid transparent;
-  border-left:6px solid #fff;
+  border-left:6px solid green;
   border-top: 6px solid transparent;
   border-bottom:6px solid transparent;
-}
-.enter-message{
-  padding:13px 0px;
-}
-.enter-message input{
-  border:none;
-  padding:10px 12px;
-  background:#d3d3d3;
-  width:260px;
-  border-radius:2px;
-}
-.enter-message a.send{
-  padding:10px 15px;
-  background:#6294c2;
-  border-radius:2px;
-  float:right;
+  color:#fff;
 }

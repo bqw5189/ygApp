@@ -7,48 +7,60 @@
         <a class="button button-icon button-clear ion-ios-arrow-back" href="#/app/tabs/chats">
         </a>
       </ion-nav-buttons>
-       <ion-nav-buttons side="right">
-        <button  class="button button-icon icon ion-ios-minus-outline" ng-click="data.showDelete = !data.showDelete; data.showReorder = false">
-           	
-        </button>
-      </ion-nav-buttons>
     </ion-nav-bar>
 	<ion-content>
-		<div class="chat-box">
-		    <div class="message-box left-img">
-		      <div class="picture">
-		        <img src="" title="user name"/>
-		        <span class="time">10 mins</span>
-		      </div>
-		      <div class="message">
-		        <span>Bobby Giangeruso</span>
-		        <p>Hey Mike, how are you doing?</p>
-		      </div>
-		    </div>
-		    <div class="message-box right-img">
-		      <div class="picture">
-		        <img src="" title="user name"/>
-		        <span class="time">2 mins</span>
-		      </div>
-		      <div class="message">
-		        <span>Mike Moloney</span>
-		        <p>Pretty good, Eating nutella, nommommom</p>
-		      </div>
-		    </div>
-		    <div class="enter-message">
-		      <input type="text" placeholder="Enter your message.."/>
-		      <a href="#" class="send">Send</a>
-		    </div>
+		<div class="chat-box" style="min-height:500px">
+		    <div class="row">
+		        <div class="col">
+		          <div class="col-demo">
+		          	<div class="picture">
+				        <img ng-src="img/avatar-5.jpg" title="user name"/>
+				        <span class="time">10 mins</span>
+			      	</div>
+			      </div>
+		        </div>
+		        <div class="col-75">
+		          <div class="col-demo">
+		          	<div class="message">
+				        <span>Bobby Giangeruso</span>
+				        <p>Hey Mike, how are you doing?</p>
+				      </div>
+		          </div>
+		        </div>
+	      	</div>
+	      	
+	      	<div class="row">
+		        <div class="col col-75">
+		          <div class="col-demo message-box right-img">
+		          	<div class="message" style="background-color:green;">
+				        <span>Bobby Giangeruso</span>
+				        <p>Hey Mike, how are you doing?</p>
+				      </div>
+		          </div>
+		        </div>
+		        <div class="col">
+		          <div class="col-demo">
+		          	<div class="picture">
+				        <img ng-src="img/avatar-1.jpg" title="user name"/>
+				        <span class="time">2 mins</span>
+			      	</div>
+			      </div>
+		        </div>
+	      	</div>
+		    
+		    <br/><br/><br/><br/>
+		    
 		  </div>
-		</div>
+		
+		
 	</ion-content>
-	<ion-footer-bar align-title="left" class="bar-assertive">
-	  <div class="buttons">
-	    <button class="button">Left Button</button>
-	  </div>
-	  <h1 class="title">Title!</h1>
-	  <div class="buttons" ng-click="doSomething()">
-	    <button class="button">Right Button</button>
-	  </div>
-	</ion-footer-bar>
+		<div class="bar bar-footer item-input-inset">
+		  <label class="item-input-wrapper">
+		    <i class="icon placeholder-icon"></i>
+		    <input type="text" placeholder="">
+		  </label>
+		  <button class="button button-clear">
+		    Send
+		  </button>
+		</div>
 </ion-view>

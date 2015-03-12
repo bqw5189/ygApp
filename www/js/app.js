@@ -169,6 +169,24 @@ angular.module('field', ['ionic', 'field.controllers','tabs.controllers','css.co
 	      }
 	    }
 	  })
+  .state('app.forms', {
+	    url: "/forms",
+	    views: {
+	      'menuContent': {
+	        templateUrl: "modules/components/css/forms.html",
+	        controller:'FormsCtrl'
+	      }
+	    }
+	  })
+ .state('app.form', {
+	    url: "/forms/:listTitle",
+	    views: {
+	      'menuContent': {
+	        templateUrl: "modules/components/css/form.html",
+	        controller:'FormCtrl'
+	      }
+	    }
+	  })
 	  ;
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/tabs/chats');
