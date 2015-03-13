@@ -106,3 +106,6 @@ a{
   border-bottom:6px solid transparent;
   color:#fff;
 }
+.col-demo.message-box.right-img{
+	text-align:right;
+}

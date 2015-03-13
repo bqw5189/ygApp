@@ -61,6 +61,7 @@ angular.module('css.controllers', [])
 	                    { title: 'Text Input: Floating Labels', id: 'FloatingLabels' },
 	                    { title: 'Inset Forms', id: 'InsetForms' },
 	                    { title: 'Inset Inputs', id: 'InsetInputs' },
+	                    { title: 'Header Inputs', id: 'HeaderInputs' },
 	                  ];
 })
 .controller('FormCtrl', function($scope, $stateParams) {
