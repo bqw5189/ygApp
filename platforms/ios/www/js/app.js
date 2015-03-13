@@ -187,6 +187,69 @@ angular.module('field', ['ionic', 'field.controllers','tabs.controllers','css.co
 	      }
 	    }
 	  })
+ .state('app.toggle', {
+	    url: "/toggle",
+	    views: {
+	      'menuContent': {
+	        templateUrl: "modules/components/css/toggle.html",
+	        controller:'FormsCtrl'
+	      }
+	    }
+	  })
+  .state('app.checkbox', {
+	    url: "/checkbox",
+	    views: {
+	      'menuContent': {
+	        templateUrl: "modules/components/css/checkbox.html",
+	        controller:'FormsCtrl'
+	      }
+	    }
+	  })
+  .state('app.radio', {
+	    url: "/radio",
+	    views: {
+	      'menuContent': {
+	        templateUrl: "modules/components/css/radio.html",
+	        controller:'FormsCtrl'
+	      }
+	    }
+	  })
+  .state('app.range', {
+	    url: "/range",
+	    views: {
+	      'menuContent': {
+	        templateUrl: "modules/components/css/range.html",
+	        controller:'FormsCtrl'
+	      }
+	    }
+	  })
+  .state('app.select', {
+	    url: "/select",
+	    views: {
+	      'menuContent': {
+	        templateUrl: "modules/components/css/select.html",
+	        controller:'FormsCtrl'
+	      }
+	    }
+	  })
+  .state('app.csstabs', {
+	    url: "/csstabs",
+	    views: {
+	      'menuContent': {
+	        templateUrl: "modules/components/css/tabs.html",
+	        controller:'TabsCtrl'
+	      }
+	    }
+	  })
+ .state('app.csstab', {
+	    url: "/csstabs/:listTitle",
+	    views: {
+	      'menuContent': {
+	        templateUrl: "modules/components/css/tab.html",
+	        controller:'TabCtrl'
+	      }
+	    }
+	  })		  
 	  ;
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/tabs/chats');

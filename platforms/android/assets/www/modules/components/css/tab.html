@@ -1,0 +1,81 @@
+<ion-view view-title="{{listTitle}}"> 
+	<ion-content>
+		
+	</ion-content> 
+	
+	<div class="bar bar-footer item-input-inset">
+	  <div class="tabs" ng-show="'Tabs' == listTitle">
+		  <a class="tab-item">
+		    Home
+		  </a>
+		  <a class="tab-item">
+		    Favorites
+		  </a>
+		  <a class="tab-item">
+		    Settings
+		  </a>
+		</div>
+		
+		<div class="tabs tabs-icon-only" ng-show="'Icon-only' == listTitle">
+		  <a class="tab-item">
+		    <i class="icon ion-home"></i>
+		  </a>
+		  <a class="tab-item">
+		    <i class="icon ion-star"></i>
+		  </a>
+		  <a class="tab-item">
+		    <i class="icon ion-gear-a"></i>
+		  </a>
+		</div>
+		
+		<div class="tabs tabs-icon-top" ng-show="'Top-Icon' == listTitle">
+		  <a class="tab-item">
+		    <i class="icon ion-home"></i>
+		    Home
+		  </a>
+		  <a class="tab-item">
+		    <i class="icon ion-star"></i>
+		    Favorites
+		  </a>
+		  <a class="tab-item">
+		    <i class="icon ion-gear-a"></i>
+		    Settings
+		  </a>
+		</div>
+		
+		<div class="tabs tabs-icon-left" ng-show="'Left-Icon' == listTitle">
+		  <a class="tab-item">
+		    <i class="icon ion-home"></i>
+		    Home
+		  </a>
+		  <a class="tab-item">
+		    <i class="icon ion-star"></i>
+		    Favorites
+		  </a>
+		  <a class="tab-item">
+		    <i class="icon ion-gear-a"></i>
+		    Settings
+		  </a>
+		</div>
+		
+		<div class="tabs-striped tabs-top tabs-color-light" ng-show="'Striped-Style' == listTitle">
+			<div class="tabs-striped tabs-color-assertive">
+			    <div class="tabs">
+			      <a class="tab-item active" href="#">
+			        <i class="icon ion-home"></i>
+			        Test
+			      </a>
+			      <a class="tab-item" href="#">
+			        <i class="icon ion-star"></i>
+			        Favorites
+			      </a>
+			      <a class="tab-item" href="#">
+			        <i class="icon ion-gear-a"></i>
+			        Settings
+			      </a>
+			    </div>
+			</div>
+		</div>
+		
+	</div>
+</ion-view>

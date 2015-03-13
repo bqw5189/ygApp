@@ -457,7 +457,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = ygApp;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "178390aa-9b42-48c8-a068-b65601ba7ead";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -489,7 +489,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = ygApp;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "178390aa-9b42-48c8-a068-b65601ba7ead";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -504,7 +504,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Shanghai Daosheng Electronic Technology Co., Ltd.";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shanghai Daosheng Electronic Technology Co., Ltd.";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_THUMB_SUPPORT = NO;
@@ -549,7 +549,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Shanghai Daosheng Electronic Technology Co., Ltd.";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shanghai Daosheng Electronic Technology Co., Ltd.";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_THUMB_SUPPORT = NO;

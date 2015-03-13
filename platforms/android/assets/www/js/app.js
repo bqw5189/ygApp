@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('field', ['ionic', 'field.controllers','tabs.controllers'])
+angular.module('field', ['ionic', 'field.controllers','tabs.controllers','css.controllers'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -19,9 +19,9 @@ angular.module('field', ['ionic', 'field.controllers','tabs.controllers'])
     }
   });
 })
-.factory('MenuButton', function() {
+.factory('AppConfig', function() {
 	  return {
-		  showReorder: true
+		  headerStyle: 'bar-positive'
 		  }
 		})
 .config(function($stateProvider, $urlRouterProvider) {
@@ -87,15 +87,170 @@ angular.module('field', ['ionic', 'field.controllers','tabs.controllers'])
       }
     }
   })
-  .state('app.tabs.chat', {
+  .state('app.chat', {
 	    url: "/chats/:chatId",
 	    views: {
-	      'chats-tab': {
+	      'menuContent': {
 	        templateUrl: "modules/chat/chat.html",
 	        controller:'ChatCtrl'
 	      }
 	    }
-	  });
+	  })
+//CSS 组件
+  .state('app.css', {
+    url: "/css",
+    views: {
+      'menuContent': {
+        templateUrl: "modules/components/css/css.html",
+        controller:'ChatCtrl'
+      }
+    }
+  })
+  .state('app.header', {
+	    url: "/header",
+	    views: {
+	      'menuContent': {
+	        templateUrl: "modules/components/css/header.html",
+	        controller:'HeaderCtrl'
+	      }
+	    }
+	  })
+  .state('app.footer', {
+	    url: "/footer",
+	    views: {
+	      'menuContent': {
+	        templateUrl: "modules/components/css/footer.html",
+	        controller:'HeaderCtrl'
+	      }
+	    }
+	  })
+  .state('app.button', {
+	    url: "/button",
+	    views: {
+	      'menuContent': {
+	        templateUrl: "modules/components/css/button.html",
+	        controller:'HeaderCtrl'
+	      }
+	    }
+	  })
+  .state('app.lists', {
+	    url: "/lists",
+	    views: {
+	      'menuContent': {
+	        templateUrl: "modules/components/css/lists.html",
+	        controller:'ListsCtrl'
+	      }
+	    }
+	  })
+ .state('app.list', {
+	    url: "/lists/:listTitle",
+	    views: {
+	      'menuContent': {
+	        templateUrl: "modules/components/css/list.html",
+	        controller:'ListCtrl'
+	      }
+	    }
+	  })
+  .state('app.cards', {
+	    url: "/cards",
+	    views: {
+	      'menuContent': {
+	        templateUrl: "modules/components/css/cards.html",
+	        controller:'CardsCtrl'
+	      }
+	    }
+	  })
+ .state('app.card', {
+	    url: "/cards/:listTitle",
+	    views: {
+	      'menuContent': {
+	        templateUrl: "modules/components/css/card.html",
+	        controller:'CardCtrl'
+	      }
+	    }
+	  })
+  .state('app.forms', {
+	    url: "/forms",
+	    views: {
+	      'menuContent': {
+	        templateUrl: "modules/components/css/forms.html",
+	        controller:'FormsCtrl'
+	      }
+	    }
+	  })
+ .state('app.form', {
+	    url: "/forms/:listTitle",
+	    views: {
+	      'menuContent': {
+	        templateUrl: "modules/components/css/form.html",
+	        controller:'FormCtrl'
+	      }
+	    }
+	  })
+ .state('app.toggle', {
+	    url: "/toggle",
+	    views: {
+	      'menuContent': {
+	        templateUrl: "modules/components/css/toggle.html",
+	        controller:'FormsCtrl'
+	      }
+	    }
+	  })
+  .state('app.checkbox', {
+	    url: "/checkbox",
+	    views: {
+	      'menuContent': {
+	        templateUrl: "modules/components/css/checkbox.html",
+	        controller:'FormsCtrl'
+	      }
+	    }
+	  })
+  .state('app.radio', {
+	    url: "/radio",
+	    views: {
+	      'menuContent': {
+	        templateUrl: "modules/components/css/radio.html",
+	        controller:'FormsCtrl'
+	      }
+	    }
+	  })
+  .state('app.range', {
+	    url: "/range",
+	    views: {
+	      'menuContent': {
+	        templateUrl: "modules/components/css/range.html",
+	        controller:'FormsCtrl'
+	      }
+	    }
+	  })
+  .state('app.select', {
+	    url: "/select",
+	    views: {
+	      'menuContent': {
+	        templateUrl: "modules/components/css/select.html",
+	        controller:'FormsCtrl'
+	      }
+	    }
+	  })
+  .state('app.csstabs', {
+	    url: "/csstabs",
+	    views: {
+	      'menuContent': {
+	        templateUrl: "modules/components/css/tabs.html",
+	        controller:'TabsCtrl'
+	      }
+	    }
+	  })
+ .state('app.csstab', {
+	    url: "/csstabs/:listTitle",
+	    views: {
+	      'menuContent': {
+	        templateUrl: "modules/components/css/tab.html",
+	        controller:'TabCtrl'
+	      }
+	    }
+	  })		  
+	  ;
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/tabs/chats');
  

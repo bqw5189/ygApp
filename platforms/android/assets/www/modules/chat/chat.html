@@ -1,16 +1,66 @@
 <ion-view view-title="{{chatId}}"> 
+<ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons>
+        <a class="button button-icon button-clear ion-ios-arrow-back" href="#/app/tabs/chats">
+        </a>
+      </ion-nav-buttons>
+    </ion-nav-bar>
 	<ion-content>
-		<ul class="chat-thread">
-			<li>Are we meeting today?</li>
-			<li>yes, what time suits you?</li>
-			<li>I was thinking after lunch, I have a meeting in the morning</li>
-		</ul>
-		
-		<form class="chat-window">
-			<input class="chat-window-message" name="chat-window-message"
-				type="text" autocomplete="off" autofocus />
-		</form>
+		<div class="chat-box" style="min-height:500px">
+		    <div class="row">
+		        <div class="col">
+		          <div class="col-demo">
+		          	<div class="picture">
+				        <img ng-src="img/avatar-5.jpg" title="user name"/>
+				        <span class="time">10 mins</span>
+			      	</div>
+			      </div>
+		        </div>
+		        <div class="col-80">
+		          <div class="col-demo">
+		          	<div class="message">
+				        <span>Bobby Giangeruso</span>
+				        <p>Hey Mike, how are you doing?</p>
+				      </div>
+		          </div>
+		        </div>
+	      	</div>
+	      	
+	      	<div class="row">
+		        <div class="col col-80">
+		          <div class="col-demo message-box right-img">
+		          	<div class="message" style="background-color:green;">
+				        <span>Bobby Giangeruso</span>
+				        <p>Hey Mike, how are you doing?</p>
+				      </div>
+		          </div>
+		        </div>
+		        <div class="col">
+		          <div class="col-demo">
+		          	<div class="picture">
+				        <img ng-src="img/avatar-1.jpg" title="user name"/>
+				        <span class="time">2 mins</span>
+			      	</div>
+			      </div>
+		        </div>
+	      	</div>
+		    
+		    <br/><br/><br/><br/>
+		    
+		  </div>
 		
 		
 	</ion-content>
+		<div class="bar bar-footer item-input-inset">
+		  <label class="item-input-wrapper">
+		    <i class="icon placeholder-icon"></i>
+		    <input type="text" placeholder="">
+		  </label>
+		  <button class="button button-clear">
+		    Send
+		  </button>
+		</div>
 </ion-view>
