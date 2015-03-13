@@ -1,0 +1,97 @@
+<ion-view view-title="{{listTitle}}"> 
+	<ion-content>
+		<div class="list" ng-show="'PlaceholderLabels' == listTitle">
+		  <label class="item item-input">
+		    <input type="text" placeholder="First Name">
+		  </label>
+		  <label class="item item-input">
+		    <input type="text" placeholder="Last Name">
+		  </label>
+		  <label class="item item-input">
+		    <textarea placeholder="Comments"></textarea>
+		  </label>
+		  
+		  <div class="padding">
+	        <button class="button button-block button-positive">Submit</button>
+	      </div>
+		</div>
+	
+		<div class="list" ng-show="'InlineLabels' == listTitle">
+		  <label class="item item-input">
+		    <span class="input-label">Username</span>
+		    <input type="text">
+		  </label>
+		  <label class="item item-input">
+		    <span class="input-label">Password</span>
+		    <input type="password">
+		  </label>
+		  
+		  <div class="padding">
+	        <button class="button button-block button-positive">Sign In</button>
+	      </div>
+		</div>
+		
+		<div class="list" ng-show="'StackedLabels' == listTitle">
+			<label class="item item-input item-stacked-label">
+			    <span class="input-label">First Name</span>
+			    <input type="text" placeholder="John">
+			  </label>
+			  <label class="item item-input item-stacked-label">
+			    <span class="input-label">Last Name</span>
+			    <input type="text" placeholder="Suhr">
+			  </label>
+			  <label class="item item-input item-stacked-label">
+			    <span class="input-label">Email</span>
+			    <input type="text" placeholder="john@suhr.com">
+			  </label>
+				  
+			  <div class="padding">
+		        <button class="button button-block button-positive">Create Account</button>
+		      </div>
+		</div>
+		
+		<div class="list" ng-show="'FloatingLabels' == listTitle">
+		  <label class="item item-input item-floating-label">
+		    <span class="input-label">First Name</span>
+		    <input type="text" placeholder="First Name">
+		  </label>
+		  <label class="item item-input item-floating-label">
+		    <span class="input-label">Last Name</span>
+		    <input type="text" placeholder="Last Name">
+		  </label>
+		  <label class="item item-input item-floating-label">
+		    <span class="input-label">Email</span>
+		    <input type="text" placeholder="Email">
+		  </label>
+		  
+		  <div class="padding">
+	        <button class="button button-block button-positive">Create Account</button>
+	      </div>
+		</div>
+		
+	<div class="list list-inset" ng-show="'InsetForms' == listTitle">
+		<label class="item item-input">
+		    <input type="text" placeholder="First Name">
+		  </label>
+		  <label class="item item-input">
+		    <input type="text" placeholder="Last Name">
+		  </label>
+	
+		  <div class="padding">
+	        <button class="button button-block button-positive">Submit</button>
+	      </div>
+	</div>
+	
+	<div class="list list-inset" ng-show="'InsetInputs' == listTitle">
+		<div class="item item-input-inset">
+		    <label class="item-input-wrapper">
+		      <input type="text" placeholder="Email">
+		    </label>
+		    <button class="button button-small">
+		      Submit
+		    </button>
+		  </div>
+	</div>
+	
+	</ion-content> 
+</ion-view>
